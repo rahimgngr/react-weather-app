@@ -11,7 +11,7 @@ function WeatherComponent() {
     name: "Ankara",
   });
 
-  const key = "25bd0f54a19a6653e8308149658e01d8";
+  const key = "YOUR_KEY_HERE";
 
   useEffect(() => {
     sendGetRequest();
