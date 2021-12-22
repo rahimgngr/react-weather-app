@@ -20,7 +20,7 @@ function WeatherComponent() {
   const sendGetRequest = async () => {
     try {
       await axios(
-        `https://api.openweathermap.org/data/2.5/weather?q=${selCity}&appid=25bd0f54a19a6653e8308149658e01d8`
+        `https://api.openweathermap.org/data/2.5/weather?q=${selCity}&appid=${key} `
       ).then((res) => setWeat(res.data));
     } catch (err) {
       // Handle Error Here
